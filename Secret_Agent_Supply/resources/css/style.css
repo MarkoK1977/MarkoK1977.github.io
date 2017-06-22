@@ -1,0 +1,296 @@
+html {
+  font-size: 18px;
+  color: white;
+  font-family: Helvetica;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding: 1rem 0.5rem;
+}
+
+.logo span {
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding: 0.66rem 0.5rem;
+}
+
+.highlight {
+  height: 25rem;
+  background-image: url("../imagery/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.article-title-container {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+.article-title {
+  background-color: black;
+  max-width: 20rem;
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+}
+
+.article-title h4 {
+  font-weight: bold;
+}
+
+.article-title h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2em;
+  margin: 0.25em 0px;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: firebrick;
+  height: 3rem;
+}
+
+.white-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Helvetica;
+  font-size: 1rem;
+  width: 960px;
+}
+
+.main-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  border: 4px solid black;
+}
+
+.item-img {
+  padding: 2rem 0;
+  max-height: 9rem;
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.item-img img {
+  max-height: 9rem;
+  max-width: 100%;
+}
+
+.glasses {
+  margin-bottom: 2rem;
+}
+
+.item span {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  width: 95%;
+
+}
+
+.business-info {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.shop-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  width: 35%;
+}
+
+.detail-title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  max-width: 100%;
+}
+
+.info .detail-content {
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 5rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 960px;
+  height: 5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .desktop {
+    display: initial;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .desktop {
+    display: none;
+  }
+
+  header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .article-title {
+    width: auto;
+  }
+
+  .article-title h4 {
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+
+  .article-title h1 {
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+
+  .white-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .article-title-container {
+    margin-left: 3rem;
+  }
+
+  .items {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .non-tablet {
+    display: none;
+  }
+
+  .business-info {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .detail-title {
+    width: 80%;
+    margin: 1rem;
+    margin-left: 0;
+  }
+
+  footer {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .non-mobile {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .highlight {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .article-title-container {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 6.7rem;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .business-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 90%;
+  }
+
+  .location {
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
