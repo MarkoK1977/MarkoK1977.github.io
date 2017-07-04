@@ -43,13 +43,6 @@ img {
 	width: 40%;
 }
 
-@media only screen and (max-width: 470px) {
-	.banner-left, .info-left, .exhibit-left,
-	.banner-right, .info-right, .exhibit-right {
-		width: 100%;
-	}
-}
-
 /* ================ Header ============== */
 
 header {
@@ -117,20 +110,6 @@ nav img {
 	display: none;
 }
 
-@media only screen and (max-width: 470px) {
-	header .logo-container {
-		display: none;
-	}
-
-	nav .desktop {
-   		display: none;
-	}
-	nav .mobile {
-		display: flex;
-		justify-content: space-between;
-	}
-}
-
 /* ================ Hero ============== */	
 
 .banner {
@@ -193,22 +172,6 @@ nav img {
 button a {
 	text-decoration: none;
 	color: rgb(255, 255, 255);
-}
-
-@media only screen and (max-width: 470px) {
-	.banner {
-		flex-direction: column;
-	}
-	.banner .banner-image {
-		padding: 0;
-	}
-	.banner .banner-text {
-		padding: 4rem 2rem;
-	}
-	.banner button {
-		width: 100%;
-		padding: 1.5rem;
-	}
 }
 
 /* ================ Info ============== */
@@ -318,15 +281,6 @@ button a {
 	color: rgb(49, 88, 138);
 }
 
-@media only screen and (max-width: 470px) {
-	.info article {
-		padding: 1rem 2rem;
-	}
-	.info article:first-child {
-		padding-top: 1rem;
-	}
-
-
 /* ================ Courses ============== */
 
 .courses {
@@ -382,25 +336,6 @@ button a {
 	font-family: "Exo", "Helvetica", sans-serif;
 	font-size: 1.65rem;
 	margin-bottom: 1.5rem;
-}
-
-@media only screen and (max-width: 470px) {
-	.courses {
-		background-color: rgb(255, 255, 255);
-	}
-	.courses .courses-container {
-		flex-direction: column;
-	}
-	.courses article {
-		max-width: 100%;
-	}
-	.courses .course-summary {
-		background-color: rgb(234, 234, 234);
-		height: auto;
-	}
-	.courses h3 {
-		margin: 0;
-	}
 }
 
 /* ================ Exhibit ============== */
@@ -474,12 +409,6 @@ button a {
 	width: 65%;
 }
 
-/* mobile screens */
-
-@media only screen and (max-width: 480px) {
-	.exhibit .exhibit-content {padding: 2rem 0;}
-	}
-
 /* ================ Footer ============== */
 
 footer {
@@ -499,14 +428,3 @@ footer {
 	color: rgb(155, 155, 155);
     font-size: 1rem;
 }
-
-/* mobile screens */
-
-@media only screen and (max-width: 470px) {
-	footer {
-		justify-content: center;
-	}
-	.mobile-hidden {
-		display: none;
-	}
-	}
